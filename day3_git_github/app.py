@@ -1,1 +1,1 @@
-print("sharook is learning git and github")
+print("sharook is learning git")
