@@ -1,1 +1,3 @@
-print("sharook is learning git and github")
+a=10
+print(a)
+
