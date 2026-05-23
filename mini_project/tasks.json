@@ -1,0 +1,14 @@
+[
+    {
+        "task": "java basics",
+        "status": "Done"
+    },
+    {
+        "task": "learn java",
+        "status": "Done"
+    },
+    {
+        "task": "RESTAPI Connections",
+        "status": "Pending"
+    }
+]
