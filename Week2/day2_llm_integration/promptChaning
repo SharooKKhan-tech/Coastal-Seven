@@ -1,0 +1,32 @@
+import requests
+
+url = "http://localhost:11434/api/generate"
+
+def ask_ai(prompt):
+
+    data = {
+        "model": "phi3:mini",
+        "prompt": prompt,
+        "stream": False
+    }
+
+    response = requests.post(url, json=data)
+
+    result = response.json()
+
+    return result["response"]
+
+# Step 1
+title = ask_ai("Generate a blog title about AI")
+
+print("TITLE:\n", title)
+
+# Step 2
+outline = ask_ai(f"Create a blog outline for this title:\n{title}")
+
+print("\nOUTLINE:\n", outline)
+
+# Step 3
+blog = ask_ai(f"Write a short blog using this outline:\n{outline}")
+
+print("\nBLOG:\n", blog)
