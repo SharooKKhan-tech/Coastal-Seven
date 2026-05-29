@@ -126,25 +126,25 @@ if __name__ == "__main__":
 
 
         prompt = f"""
-You are an AI assistant.
+                You are an AI assistant.
 
-Answer the question ONLY using the context below.
+                Answer the question ONLY using the context below.
 
-Context:
-{context}
+                Context:
+                {context}
 
-Question:
-{query}
+                Question:
+                {query}
 
-Answer:
-"""
+                Answer:
+            """
 
         url = "http://localhost:11434/api/generate"
 
         data = {
             "model": "phi3:mini",
             "prompt": prompt,
-            "stream": False
+            "stream": True
         }
 
         response = requests.post(url, json=data)
