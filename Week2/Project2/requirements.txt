@@ -1,6 +1,0 @@
-sentence-transformers
-chromadb
-google-generativeai
-PyPDF2
-python-docx
-python-dotenv
