@@ -51,7 +51,7 @@ def main():
 
         elif choice == "3":
 
-            tag = input("\nEnter programming topic (python/java/javascript): ")
+            tag = input("\nEnter Tech topics: ")
 
             print("\nFetching latest articles...\n")
 
